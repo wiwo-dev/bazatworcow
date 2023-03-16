@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/bazatworcow/static/js/main.c80e4ce6.js",
+    "main.js": "/bazatworcow/static/js/main.aefde234.js",
     "index.html": "/bazatworcow/index.html",
-    "main.c80e4ce6.js.map": "/bazatworcow/static/js/main.c80e4ce6.js.map"
+    "main.aefde234.js.map": "/bazatworcow/static/js/main.aefde234.js.map"
   },
   "entrypoints": [
-    "static/js/main.c80e4ce6.js"
+    "static/js/main.aefde234.js"
   ]
 }
