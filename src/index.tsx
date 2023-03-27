@@ -5,6 +5,10 @@ import reactToWebComponent from "react-to-webcomponent";
 import Checklist from "./components/checklist/Checklist";
 import { isChecklistItemType } from "./types/checklistItem";
 
+import Greeting from "./components/Greeting";
+import Napis from "./components/Napis";
+import Napis2 from "./components/Napis2";
+
 class WebComponentWrapper extends React.Component<{ items: string }, {}> {
   static propTypes: {
     items: Requireable<string>;
@@ -39,8 +43,7 @@ const wcChecklistShadow = reactToWebComponent(WebComponentWrapper, React, ReactD
   shadow: true,
 });
 
-customElements.define("r2wc-checklist", wcChecklist);
-customElements.define("r2wc-checklist-shadow", wcChecklistShadow);
+customElements.define("napis2-component", reactToWebComponent(Napis2, React, ReactDOM));
 
 // How to use:
 // <script defer="defer" src="https://rjspencer.github.io/r2wc-checklist/static/js/main.js"></script>

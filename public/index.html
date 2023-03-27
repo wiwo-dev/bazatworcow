@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
-    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
-    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
-    <title>R2WC Checklist</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <r2wc-checklist items='[{"label":"First Thing","isChecked":false}]' />
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+  <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+  <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+  <title>BazaTworcow - Components</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <!-- <napis-component text="Baza Twórców"></napis-component> -->
+  <div style="position: relative">
+
+    <napis2-component></napis2-component>
+  </div>
+
+  <script>
+    const napisElement = document.getElementsByTagName('napis2-component')[0]
+    napisElement.text = ["FILM /", "FOTOGRAFIA /", "SOCIAL MEDIAAA /"];
+    napisElement.duration = 3;
+    napisElement.y = "0.8em";
+  </script>
+</body>
+
 </html>
